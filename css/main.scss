@@ -1,0 +1,42 @@
+.calc_flexbox {
+  display: flex;
+  background-color: rgb(245, 146, 91);
+  flex-direction: column;
+  height: 300px;
+  .first_row, .second_row, .third_row, .fourth_row, .fifth_row {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+  .clear, .zero, .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .divide, .multiply, .add, .subtract, .equal, .decimal {
+    flex: 1;
+    padding: 1px;
+  }
+  .vis_box {
+    flex: 3;
+    padding: 1px;
+  }
+}
+.vis_box {
+  display: flex;
+  flex-direction: row;
+  #calcNum1 {
+    flex: 1;
+  }
+  #calcAnswerOutput {
+  vertical-align: middle;
+  height: 100%;
+  background-color: white;
+  border: none;
+  padding-top: 20px;
+  }
+}
+
+input {
+  width: 100%;
+  height: 100%;
+}
+input:hover {
+  box-shadow: 0 0 20px rgba(129, 255, 247, 0.8);
+  transition: box-shadow 0.3s, border 0.3s;
+}

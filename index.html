@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Hello World</title>
+  <meta name="description" content="An example basic webpage from The Iron Yard.">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Compressed CSS -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.3/foundation.min.css"> -->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8 col-sm-4">
+        <div class="calc_flexbox text-center">
+          <!-- FIRST ROW -->
+          <div class="first_row">
+              <div class="clear"><input type="button" value="Clear" id="calcBtnClear" /></div>
+              <div class="vis_box">
+                <p id="calcAnswerOutput" /></p>
+                <input type="text" class="text-right" id="calcNum1" />
+                <!-- <inp id="calcAnswerOutput"></span> -->
+              </div>
+          </div>
+          <!-- SECOND ROW -->
+          <div class="second_row">
+              <div class="seven"><input type="button" value="7" id="calcBtn7" /></div>
+              <div class="eight"><input type="button" value="8" id="calcBtn8" /></div>
+              <div class="nine"><input type="button" value="9" id="calcBtn9" /></div>
+              <div class="divide"><input type="button" value="/" id="calcBtnDiv" /></div>
+          </div>
+          <!-- THIRD ROW -->
+          <div class="third_row">
+              <div class="four"><input type="button" value="4" id="calcBtn4" /></div>
+              <div class="five"><input type="button" value="5" id="calcBtn5" /></div>
+              <div class="six"><input type="button" value="6" id="calcBtn6" /></div>
+              <div class="multiply"><input type="button" value="x" id="calcBtnMult" /></div>
+          </div>
+          <!-- FOURTH ROW -->
+          <div class="fourth_row">
+              <div class="one"><input type="button" value="1" id="calcBtn1" /></div>
+              <div class="two"><input type="button" value="2" id="calcBtn2" /></div>
+              <div class="three"><input type="button" value="3" id="calcBtn3" /></div>
+              <div class="subtract"><input type="button" value="-" id="calcBtnMinus" /></div>
+          </div>
+          <!-- FIFTH ROW -->
+          <div class="fifth_row">
+              <div class="zero"><input type="button" value="0" id="calcBtn0" /></div>
+              <div class="decimal"><input type="button" value="." id="calcBtnDec" /></div>
+              <div class="equal"><input type="button" value="=" id="calcBtn" /></div>
+              <div class="add"><input type="button" value="+" id="calcBtnPlus" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

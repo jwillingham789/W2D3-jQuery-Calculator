@@ -1,0 +1,49 @@
+.calc_flexbox {
+  display: flex;
+  background-color: #f5925b;
+  flex-direction: column;
+  height: 300px;
+}
+
+.calc_flexbox .first_row, .calc_flexbox .second_row, .calc_flexbox .third_row, .calc_flexbox .fourth_row, .calc_flexbox .fifth_row {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+
+.calc_flexbox .clear, .calc_flexbox .zero, .calc_flexbox .one, .calc_flexbox .two, .calc_flexbox .three, .calc_flexbox .four, .calc_flexbox .five, .calc_flexbox .six, .calc_flexbox .seven, .calc_flexbox .eight, .calc_flexbox .nine, .calc_flexbox .divide, .calc_flexbox .multiply, .calc_flexbox .add, .calc_flexbox .subtract, .calc_flexbox .equal, .calc_flexbox .decimal {
+  flex: 1;
+  padding: 1px;
+}
+
+.calc_flexbox .vis_box {
+  flex: 3;
+  padding: 1px;
+}
+
+.vis_box {
+  display: flex;
+  flex-direction: row;
+}
+
+.vis_box #calcNum1 {
+  flex: 1;
+}
+
+.vis_box #calcAnswerOutput {
+  vertical-align: middle;
+  height: 100%;
+  background-color: white;
+  border: none;
+  padding-top: 20px;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+}
+
+input:hover {
+  box-shadow: 0 0 20px rgba(129, 255, 247, 0.8);
+  transition: box-shadow 0.3s, border 0.3s;
+}
